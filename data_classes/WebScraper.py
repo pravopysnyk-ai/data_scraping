@@ -104,7 +104,7 @@ class WebScraper(object):
 
     def save_lines(self, lines, website_folder, output_folder_path):
         text = '\n'.join(lines)
-        filename = output_folder_path + website_folder.split('/')[-1] + ".txt"
+        filename = output_folder_path + "/" + website_folder.split('/')[-1] + ".txt"
         with open(filename, 'w') as f:
             f.write(text)
         print("Saved!\n")

@@ -1,0 +1,2 @@
+from data_classes.WebScraper import WebScraper
+from data_classes.TextMerger import TextMerger
