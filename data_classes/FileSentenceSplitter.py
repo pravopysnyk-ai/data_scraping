@@ -15,7 +15,6 @@ class FileSentenceSplitter(object):
         # loading the data
         with open(input_path, 'r', encoding='utf-8') as f:
             text = f.read()
-            text_org = text
 
         # Removing empty lines
         text = re.sub(r"\n{2,}", r"\n", text)
