@@ -9,6 +9,9 @@ def main(website_exports_folder="/data/raw_exports", output_path="data/output"):
     # initialization
     web_scraper = WebScraper()
     text_merger = TextMerger()
+    # if the output path does not exist, create it
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
     # scraping the text from each link
     for website_folder in os.listdir(website_exports_folder):
         website_folder = website_exports_folder + website_folder
