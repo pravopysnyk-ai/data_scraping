@@ -1,5 +1,4 @@
 import re
-import os
 import cld3
 
 class FileSentenceCleaner(object):
